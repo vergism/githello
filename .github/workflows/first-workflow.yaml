@@ -1,0 +1,25 @@
+# workflow files 
+
+# name of the workflow
+name: our-first-workflow
+
+#  when to trigger the workflow - commit or tag push
+on: push
+jobs:
+    
+    first-job-in-the-workflow:  # job_id 
+      name:  Our first job      # name of the job
+      runs-on: ubuntu-latest    # runner 
+      steps:
+        # step
+        - name: print the directory name
+          run: pwd
+
+        # step
+        - name: list the directory contents
+          run: ls
+
+        # step
+        - name: print a file
+          run: cat readme.md
+
