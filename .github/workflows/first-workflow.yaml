@@ -13,7 +13,7 @@ jobs:
       steps:
         # step
         - name: checkout the code
-          uses: actions/@checkout@v4
+          uses: actions/checkout@v4
 
         # step
         - name: print the directory name
