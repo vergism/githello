@@ -12,6 +12,10 @@ jobs:
       runs-on: ubuntu-latest    # runner 
       steps:
         # step
+        - name: checkout the code
+          uses: actions/@checkout@v4
+
+        # step
         - name: print the directory name
           run: pwd
 
